@@ -1,6 +1,6 @@
 #JAV Star name finder, V1.0, written by SangDo_Kim, a user in AVDBS.com
 #Anyone can freely change the code and use it for their usage, but please put the original writer -
-#SangDo_Kim in thier changed program. 
+#SangDo_Kim in their changed program. 
 
 import tkinter
 from tkinter import filedialog
