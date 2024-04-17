@@ -4,7 +4,7 @@ JAV file name should start with its product code, for example, JEL-223.
 Valid JAV file names: 
 JUL-222 Cute girl.mp4
 JUL-222 Cute girl.srt  (Subtitle files are also allowed)
-JESES-24234.mp4        (Product code longer than 6 letter is allowed)
+FSDSS-406.mp4          (Product code longer than 6 letter is allowed)
 
 Not valid JAV file names:
 Cute girl AV.mp4       (No product code)
@@ -20,7 +20,7 @@ JAV 파일 이름은 품번(예: JEL-223)으로 시작해야 합니다.
 유효한 JAV 파일 이름:
 JUL-222 유모 야동.mp4   (일반적인 야동 파일 이름)
 JUL-222 유모 야동.srt   (자막 파일이라도 상관 없음)
-JESES-24234.mp4        (품번 코드는 6자가 아니라 더 길어도 상관 없음)
+FSDSS-406.mp4          (품번 코드는 6자가 아니라 더 길어도 상관 없음)
 
 유효하지 않은 파일 이름:
 히마리가 나오는 야동.mp4  (품번이 없음)
