@@ -1,4 +1,4 @@
-INFO: This program is out dated. Please use the upgraded version.
+INFO: This program is working, but I recommend using a upgraded version (V1.13 or later)
 ==================================================================
 
 This Python program reads file names in a folder which is containing JAV (Japanese Adult Video) files, and put a star (actress) name in Korean to each files. 
