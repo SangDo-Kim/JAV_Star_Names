@@ -1,34 +1,29 @@
-INFO: This program is working, but I recommend using a upgraded version (V1.13 or later)
-==================================================================
-
 This Python program reads file names in a folder which is containing JAV (Japanese Adult Video) files, and put a star (actress) name in Korean to each files. 
-JAV file name should start with its product code, for example, JEL-223. 
-
-Valid JAV file names: 
-JUL-222 Cute girl.mp4
-JUL-222 Cute girl.srt  (Subtitle files are also allowed)
-FSDSS-406.mp4          (Product code longer than 6 letter is allowed)
-
-Not valid JAV file names:
-Cute girl AV.mp4       (No product code)
-Cute girl JUL-222.mp4  (Product code should be at first)
-JUL-222Cute girl.mp4   (There should be a space after a product code)
-JUL222.mp4             (There should be dash '-' in the middle of a product code)
-
-Starring information is read from Google UK's saved page title from AVDBS.com.
-
-이 파이썬 프로그램은 JAV(일본 야동) 파일이 포함된 폴더의 파일 이름들을 읽은 후, 출연자(여배우) 이름을 한글로 각 파일에 붙입니다.
-JAV 파일 이름은 품번(예: JEL-223)으로 시작해야 합니다.
+이 파이썬 프로그램은 JAV(일본 야동) 파일이 포함된 폴더와 모든 하위 폴더의 파일 이름들을 읽은 후 출연자(여배우) 이름을 한글로 각 파일에 붙입니다.
+JAV 파일 이름은 품번(예: JEL-223)을 포함해야 합니다.
+Written by SangDo_Kim in AVDBS.com
 
 유효한 JAV 파일 이름:
-JUL-222 유모 야동.mp4   (일반적인 야동 파일 이름)
-JUL-222 유모 야동.srt   (자막 파일이라도 상관 없음)
-FSDSS-406.mp4          (품번 코드는 6자가 아니라 더 길어도 상관 없음)
+[HD]JUL-222 유모 야동.mp4 (품번이 맨 앞에 있지 않아도 상관 없음)
+CutyGirl.JUL-222-Uncensored.srt (자막 파일이라도 상관 없음)
+JUL222 High Quality.mp4             (품번이 영문자가 2~3개이고 숫자가 3개인 경우 중간에 대시 '-'가 없어도 품번으로 인식)
 
 유효하지 않은 파일 이름:
-히마리가 나오는 야동.mp4  (품번이 없음)
-히마리 JUL-222.mp4       (품번이 맨 앞에 있어야 함)
-JUL-222히마리.mp4        (품번 뒤에 빈 칸이 있어야 함)
-JUL222.mp4               (품번 중간에 대시 '-'가 있어야 함)
+히마리 야동.mp4         (품번이 없음)
+히마리 JUL 222.mp4    (품번 중간에 공백이 있으면 안 됨)
 
 출연자 정보는 구글 영국에 저장된 AVDBS.com의 페이지 제목에서 읽어 옵니다.
+-----------------------------
+V1.12 변경 사항
+- 출연자 구분자를 4개로 제한: "#", "^", "`", "출)"
+   기존에 허용했던 구분자 "@", "$", ";"는 파일 이름에서 흔히 사용되므로 구분자로 쓰지 않기로 함.
+- 품번 인식: 특수 문자(@, $, ', & 등)이 포함된 파일 이름에서 품번 인식을 제대로 하지 못함.
+예) HD@JUL-333의 품번을 HDJUL-333으로 잘못 인식했음. 이를 JUL-333로 바로 잡음.
+
+V1.13 변경 사항
+- 품번 인식: 품번 뒤에 대시가 또 붙어 있는 경우 품번 인식 오류
+   예) JUL-333-Uncensored.mp에서 품번을 JUL-333-으로 잘못 인식하던 것을 바로 잡음.
+- 독립 실행 파일(EXE 파일)이 실행 안 되는 문제 해결(특정 모듈이 포함 안 됨)
+
+V1.14 변경 사항
+- 품번 인식 개선
